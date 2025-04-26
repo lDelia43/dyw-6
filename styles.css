@@ -54,11 +54,16 @@ nav a {
 }
 
 section {
-  margin-bottom: 20px;
+  padding-top: 10%;
+  margin-top: -10%;
 }
 
 hr {
   border-color: red;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 footer {
