@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cantina Chichilo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Cantina Chichilo</div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#historia">Historia</a>
+        <a href="#menu">Menú</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <section id="inicio">
+        <h2>Bienvenidos</h2>
+        <p>
+          En Cantina Chichilo combinamos las recetas tradicionales italianas con la calidez de un ambiente
+          familiar. Nuestra pasión por la buena comida y el servicio nos ha convertido en un clásico de la
+          ciudad.
+        </p>
+        <img src="./img/restaurante.png" alt="Foto del restaurante" class="responsive" />
+      </section>
+
+      <section id="historia">
+        <h2>Nuestra Historia</h2>
+        <p>
+          Desde 1950, Cantina Chichilo es sinónimo de calidad, tradición y hospitalidad. Fundada por
+          inmigrantes italianos, nuestra cantina sigue respetando los sabores auténticos y las costumbres que
+          nos vieron nacer.
+        </p>
+      </section>
+
+      <section id="menu">
+        <h2>Menú</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <img src="./img/lentejas_a_caballo.png" alt="Lentejas a Caballo" />
+            <h3>Lentejas a Caballo</h3>
+          </div>
+          <div class="menu-item">
+            <img src="./img/pasta_con_chichiri-ceci.png" alt="Pasta con Chichiri-Ceci" />
+            <h3>Pasta con Chichiri-Ceci</h3>
+          </div>
+          <div class="menu-item">
+            <img src="./img/mondongo_italiana.png" alt="Mondongo a la Italiana" />
+            <h3>Mondongo a la Italiana</h3>
+          </div>
+          <div class="menu-item">
+            <img src="./img/riniones_al_vino.png" alt="Riñones al Vino Blanco" />
+            <h3>Riñones al Vino Blanco</h3>
+          </div>
+          <div class="menu-item">
+            <img src="./img/calamarettis.png" alt="Calamarettis a la Escarpeta" />
+            <h3>Calamarettis a la Escarpeta</h3>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+          <p class="rights">📍 Dirección: Calle Falsa 123, Buenos Aires</p>
+          <p>📞 Teléfono: (011) 1234-5678</p>
+          <p>✉️ Email: contacto@cantinachichilo.com.ar</p>
+        </div>
+        <p>&copy; 2025 Cantina Chichilo - Todos los derechos reservados.</p>
+      </footer>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("nav").classList.toggle("active")
+      }
+    </script>
+  </body>
+</html>
